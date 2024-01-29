@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css units</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+        .parent{
+            background-color: darkorange;
+        }
+
+        .px{
+            background-color: rgb(153, 153, 190);
+            color: black;
+            width: 400px;   /* px --absolute size */ 
+        }
+        .persent{
+            background-color: rgb(187, 71, 187);
+            color: black;
+            width: 40%;   /* % -- related to parent width/height */ 
+        }
+        .vw{
+            background-color: rgb(91, 168, 212);
+            color: black;
+            width: 50vw;   /* vw/vh -- related to screen size */ 
+        }
+        .rem{
+            background-color: rgb(82, 180, 131);
+            color: black;
+            width: 20rem;   /* rem  -- related to root element font size (20 * 16 px)  */ 
+        }
+        .em{
+            background-color: rgb(82, 180, 131);
+            color: black;
+            font-size: 20px;
+            width: 20em;   /* em   -- related to its font size (20 * 20 px)  */ 
+        }
+    </style>
+</head>
+<body>
+    <!-- 1,px --absolute size
+         2,% -- related to parent width/height
+         3,vw/vh -- related to screen size
+         4,rem  -- related to root element font size
+         5,em   -- related local to its font size   -->
+    <div class="parent">
+<div class="px">px describe absolute size</div>
+<div class="persent">% -- related to parent width/height</div>
+<div class="vw">vw/vh -- related to screen size</div> <!-- 1vw = 19.2px-->
+<div class="rem">rem  -- related to root element font size</div> 
+<!-- 16px is default font size (20 * 16px)-->
+<div class="em">em   -- related to its font size</div>
+    </div>
+</body>
+</html>
