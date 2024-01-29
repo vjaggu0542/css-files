@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxshadow{
+            width: 100px;
+            height: 100px;
+            margin-left: 300px;
+            background-color: brown;
+            box-shadow: 10px 10px 5px black; /* right,footer*/
+        }
+        .boxshadow1{
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 300px;
+            background-color: brown;
+            box-shadow: -10px -10px 5px black; /* top,left*/
+        }
+        .boxshadow2{
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 300px;
+            background-color: brown;
+            box-shadow: -10px -10px 5px black ,10px 10px 5px black; /* right,footer*//* top,left*/
+        }
+        .boxshadow3{
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 300px;
+            background-color: brown;
+            box-shadow: 0px 0px 30px black ;/* all sides*/
+        }
+        .boxshadow4{
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;
+            margin-left: 300px;
+            background-color: brown;
+            box-shadow: 10px 10px 10px 20px black ;/* spread distance*/
+        }
+    </style>
+</head>
+<body>
+    <div class="boxshadow"></div>
+    <div class="boxshadow1"></div>
+    <div class="boxshadow2"></div>
+    <div class="boxshadow3"></div>
+    <div class="boxshadow4"></div>
+    <!-- box-shadow min 2 values and max 5 values
+    1. horizontal offset
+    2. vertical offset
+    3. blur redius
+    4. spread distance
+    5. shadow color
+    -->
+</body>
+</html>
