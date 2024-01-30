@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient colors</title>
+    <style>
+        .parent{
+            display: flex;
+            justify-content: center;
+                 
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+            color: white;
+        }
+        .child1{  background: linear-gradient(red,blue,yellow);   }
+        .child2{  background: linear-gradient(to top,red,blue,yellow);   }
+        .child3{  background: linear-gradient(to bottom,red,blue,yellow);   }
+        .child4{  background: linear-gradient(to left,red,blue,yellow);   }
+        .child5{  background: linear-gradient(to right,red,blue,yellow);   }
+        .child6{  background: linear-gradient(to left top,red,blue,yellow);   }
+        .child7{  background: linear-gradient(to left bottom,red,blue,yellow);   }
+        .child8{  background: linear-gradient(0deg,red,blue,yellow);   }
+        .child9{  background: linear-gradient(90deg,red,blue,yellow);   }
+        .child10{  background: linear-gradient(180deg,red,blue,yellow);   }
+
+        .radial{ background: radial-gradient(red,blue,yellow)}
+        .rep-lin{ background: repeating-linear-gradient(red 10%,blue 20%,yellow 30%)}
+        .rep-rad{ background: repeating-radial-gradient(red 10%,blue 20%,yellow 30%) }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>linear gradient</h2>
+        <div class="parent">
+            <div class="child child1">default</div>
+            <div class="child child2">to top</div>
+            <div class="child child3">to bottom</div>
+            <div class="child child4">to left</div>
+            <div class="child child5">to right</div>
+            <div class="child child6">to left top</div>
+            <div class="child child7">to left bottom</div>
+            <div class="child child8">0deg</div>
+            <div class="child child9">90deg</div>
+            <div class="child child10">180deg</div>
+        </div>
+        <h2>radial gradient</h2>
+        <div class="parent">
+            <div class="child radial">default</div>
+          
+        </div>
+        <h2>repeated linear gradient</h2>
+        <div class="parent">
+            <div class="child rep-lin">default</div>
+          
+        </div>
+        <h2>repeating radial gradient</h2>
+        <div class="parent">
+            <div class="child rep-rad">default</div>
+          
+        </div>
+    </div>
+</body>
+</html>
