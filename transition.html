@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .two{
+            margin-top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* transition: width 4s 2s,height 4s 2s,background-color 4s 1s; */
+             transition: all 4s 1s; 
+
+             /* transition-property: all;
+             transition-timing-function: 4s;
+             transition-delay: 2s; */
+        }
+        .one:hover,.two:hover{
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;  
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+
+    </div>
+    <div class="two">
+
+    </div>
+    
+</body>
+</html>

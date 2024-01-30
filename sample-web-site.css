@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.constructer{
+    background-image: url("Book-a-Flight.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+
+.navigater{
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigater a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.navigater ul li{
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+.navigater ul li a{
+    font-size: 20px;
+}
+.navigater ul li::after{
+ content: '';
+height: 3px;
+width: 0;
+background-color: rgb(241, 10, 10);
+transition: 1s;
+left: 0;
+bottom: -10px;
+position: absolute;
+transition: 0.6s;
+}
+
+.navigater ul li:hover::after{
+    width: 100%;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 80px;
+    color: darkred;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+button{
+    padding: 5px 0px;
+    width: 150px;
+    border: 2px solid red;
+    background: transparent;
+    border-radius: 50px;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+}
+span{
+    background-color: red;
+    position: absolute;
+    transition: 1s;
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+  
+}
+button:hover span{
+    width: 100%;
+    color: white;
+}
+.footer{
+    padding: 10px 10%;
+    text-transform: capitalize;
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+.box a{
+    display: block;
+    text-decoration: none;
+}
+.card{
+    background-color: black;
+    color: white;
+    padding: 5px 0px;
+    text-align: center;
+}
