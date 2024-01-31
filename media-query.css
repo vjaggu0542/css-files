@@ -1,0 +1,25 @@
+body{
+    background-color: darkcyan;
+}
+
+.media-content{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: aliceblue;
+}
+#media-width{
+    position: absolute;
+    left: 50%;
+    top:60%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: aliceblue;
+}
+@media screen and (max-width:800px){
+   body{
+    background-color: brown;
+   } 
+}
