@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+input[type="checkbox"]{
+    width: 40px;
+    height: 20px;
+    background-color: #c6c6c6;
+    border-radius: 10px;
+    appearance: none;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+input:checked[type="checkbox"]{
+    background-color: blue;
+}
+
+input[type="checkbox"]::before{
+   content:"";
+ position: absolute;
+ left: 0;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+input:checked[type="checkbox"]::before{
+    left: 20px;
+}

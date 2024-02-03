@@ -1,0 +1,43 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.slider{
+    width:500px;
+    height: 300px;
+    position: relative;
+
+}
+.slider img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.left{
+    position: absolute;
+    left: 0;
+    top: 43%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding:10px 10px;
+    font-size: 20px;
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 43%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding:10px 10px;
+    font-size: 20px;
+}

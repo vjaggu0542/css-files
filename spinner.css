@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#spinn{
+    font-size: 30px;
+    animation: spinn 1.5s  infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinn{
+    to{
+        transform: rotate(360deg);
+    }
+}
