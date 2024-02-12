@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shapes</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        padding: 50px 10px;
+      }
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(241, 20, 20);
+            border-radius: 50px;
+        }
+        .box{
+        border: 50px solid;
+        border-color: rgb(241, 20, 20) blue yellow  black;
+        width: 0;
+        height: 0;
+        }
+        .tringle1{
+            border: 50px solid;
+        border-color: rgb(241, 20, 20) transparent transparent transparent;
+        width: 0;
+        height: 0;
+        }
+        .tringle2{
+            border: 50px solid;
+        border-color: transparent rgb(241, 20, 20)  transparent transparent;
+        width: 0;
+        height: 0;
+        }
+        .tringle3{
+            border: 50px solid;
+        border-color: transparent transparent rgb(241, 20, 20)  transparent ;
+        width: 0;
+        height: 0;
+        }
+        .tringle4{
+            border: 50px solid;
+        border-color:transparent transparent transparent rgb(241, 20, 20)  ;
+        width: 0;
+        height: 0;
+        }
+        .star{
+            border-bottom: 50px solid rgb(241, 20, 20);
+            border-left: 80px solid transparent;
+            border-right: 80px solid transparent;
+            width: 0;
+        height: 0;
+        transform: rotate(30deg);
+        position: relative;
+        }
+        .star::after{
+            content: '';
+            border-bottom: 50px solid rgb(241, 20, 20);
+            border-left: 80px solid transparent;
+            border-right: 80px solid transparent;
+            width: 0;
+        height: 0;
+        transform: rotate(-60deg);
+        position: absolute;
+        left: -80px;
+        top: -1px;
+        }
+        .star::before{
+            content: '';
+            border-bottom: 50px solid rgb(241, 20, 20);
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            width: 0;
+        height: 0;
+        transform: rotate(-30deg);
+        position: absolute;
+        left: -45px;
+        top: -35px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="box"></div>
+    <div class="tringle1"></div>
+    <div class="tringle2"></div>
+    <div class="tringle3"></div>
+    <div class="tringle4"></div>
+    <div class="star"></div>
+</body>
+</html>
